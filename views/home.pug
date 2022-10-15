@@ -1,0 +1,48 @@
+extends base.pug 
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    Section#introSection
+        div.big Welcome to Sagar's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    Section#missionSection 
+        h2 Our Mission   
+        div.card 
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="../static/image/1.png")
+
+                div.card-content    
+                    p This is the best dance academy of Asia Lorem ipsum dolor sit amet
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="../static/image/2.png")
+
+                div.card-content    
+                    p This is the best dance academy of Asia Lorem ipsum dolor sit amet
+        div.card 
+            h3 Expert Teaching 
+            div.card-box
+                div.card-img
+                    img(src="../static/image/3.png")
+
+                div.card-content    
+                    p This is the best dance academy of Asia Lorem, ipsum dolor sit amet
+
+    Section#sponsorSection
+        h2 Our sponsors 
+        div#sponsors
+           img(src="/static/image/logo1.png", alt="sponsor image" class="spImage") 
+           img(src="/static/image/logo2.png", alt="sponsor image" class="spImage") 
+           img(src="/static/image/logo3.png", alt="sponsor image" class="spImage") 
+           img(src="/static/image/logo4.png", alt="sponsor image" class="spImage")       
